@@ -8,8 +8,8 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat 'make'
-                bat 'hello.exe'
+                sh 'make'
+                sh './hello'
             }
         }
     }
